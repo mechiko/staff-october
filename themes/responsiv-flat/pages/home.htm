@@ -1,0 +1,27 @@
+title = "Универсальный транспортный модуль"
+url = "/"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[posts newsposts]
+pageNumber = "{{ :page_news }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "created_at desc"
+postPage = "blog/blog"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = "blog/post"
+==
+<div class="container">
+{% component 'newsposts' %}
+
+{% component 'blogPosts' %}
+</div>
