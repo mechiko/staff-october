@@ -1,0 +1,14 @@
+[viewBag]
+==
+<h3 style="padding-bottom:30px;">Новости</h3>
+
+<div class="content">
+    <p><strong>{{ newspost.post.introductory|raw }}</strong></p>
+    <p>{{ newspost.post.content|raw }}</p>
+</div>
+<div class="newspost-pub">
+<p class="info">
+    Опубликовано {{ newspost.post.published_at|date('Y-m-d') }}
+</p>
+<a href="/">Вернуться на главную</a>
+</div>

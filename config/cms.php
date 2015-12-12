@@ -150,7 +150,7 @@ return [
     |
     */
 
-    'enableAssetMinify' => null,
+    'enableAssetMinify' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -237,7 +237,7 @@ return [
     |
     */
 
-    'linkPolicy' => 'detect',
+    'linkPolicy' => 'secure',
 
     /*
     |--------------------------------------------------------------------------
@@ -260,6 +260,6 @@ return [
     |
     */
 
-    'enableCsrfProtection' => false,
+    'enableCsrfProtection' => true,
 
 ];

@@ -1,23 +1,17 @@
 description = "Default layout"
-==
-<?php
-function onStart()
-{
-    $this->addCss('assets/css/my.css');
-}
-?>
+
+[SeoCmsPage]
 ==
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ФГУП ГНИВЦ СЗФО - {{ this.page.title }}</title>
-        <meta name="author" content="October CMS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% component 'SeoCmsPage' %}
         <link rel="icon" type="image/png" href="{{ 'assets/images/logo.png'|theme }}" />
         {% styles %}
-        <link href="{{ [
-            'assets/css/theme.css'
-        ]|theme }}" rel="stylesheet">
+        <link href="{{ 
+            'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="{{ 
+            'assets/css/my.css'|theme }}" rel="stylesheet">
     </head>
     <body class="page-{{ this.page.id }} layout-{{ this.layout.id }}">
         <!-- Header -->
@@ -36,8 +30,9 @@ function onStart()
         </footer>
 
         <!-- Scripts -->
+        <script src="{{ 
+            'assets/javascript/jquery.min.js'|theme }}"></script>
         <script src="{{ [
-            'assets/javascript/jquery.js',
             'assets/vendor/bootstrap/js/transition.js',
             'assets/vendor/bootstrap/js/alert.js',
             'assets/vendor/bootstrap/js/button.js',

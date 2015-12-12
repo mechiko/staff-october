@@ -1,3 +1,34 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #fff;
+}
+
+#layout-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #eee;
+}
+
 ul.post-list {
     list-style-type: none;
+}
+
+.newspost-pub {
+    margin-top: 20px;
+}
+.newspost-pub p {
+    font-size: 0.6em;
+}
+
+header#layout-header .navbar-brand {
+    padding-left: 0px;
+    background-image: none;
 }

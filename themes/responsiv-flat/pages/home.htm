@@ -1,7 +1,8 @@
-title = "Универсальный транспортный модуль"
+title = "Программа AlcoHelp"
 url = "/"
 layout = "default"
 is_hidden = 0
+seo_keywords = "EGAIS,ЕГАИС,УТМ,универсальный транспортный модуль ЕГАИС,документооборот ЕГАИС, электронный документооборот ЕГАИС"
 robot_index = "index"
 robot_follow = "follow"
 
@@ -11,17 +12,31 @@ postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "created_at desc"
 postPage = "blog/blog"
-
-[blogPosts]
-pageNumber = "{{ :page }}"
-postsPerPage = 10
-noPostsMessage = "No posts found"
-sortOrder = "published_at desc"
-categoryPage = 404
-postPage = "blog/post"
 ==
 <div class="container">
+<h2>Новости рынка</h2>
 {% component 'newsposts' %}
-
-{% component 'blogPosts' %}
+<p></p>
+<h3>Возможности программы AlcoHelp:</h3>
+<p>
+Программа AlcoHelp взаимодействует с Универсальным транспортным модулем (далее –
+УТМ) и предназначена для электронного документооборота с контрагентами и с самой системой
+ЕГАИС.<br />
+Основные возможности программы:<br />
+<ul>
+<li>Запрос справочников организации и алкогольной продукции, их просмотр, сохранение и
+удаление.</li>
+<li>Просмотр, сохранение и удаление товарно-транспортных накладных (далее – ТТН).</li>
+<li>Отправка актов подтверждения, отказа или расхождения ТТН.</li>
+<li>Запрос остатков продукции.</li>
+<li>Просмотр отправленных запросов на сервер ЕГАИС.</li>
+</ul>
+</p>
+<h4>Системные требования</h4>
+<p>Программа AlcoHelp должна быть установлена на компьютер, на котором уже настроен и
+работает УТМ. </p>
+<h5>Ссылки для загрузки</h5>
+<p><a href="/storage/app/media/alcohelp-rukovodstvo-polzovatelya-03.pdf" download="AlcoHelp.pdf">Описание программы AlcoHelp.</a></p>
+<p><a href="/storage/app/media/AlcoHelp.exe" download="AlcoHelp.exe">Загрузить программу AlcoHelp.</a></p>
+<p></p>
 </div>

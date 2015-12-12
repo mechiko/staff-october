@@ -2,12 +2,21 @@ title = "Post"
 url = "/news/post/:slug"
 layout = "default"
 is_hidden = 0
+meta_title = "Новости программы AlcoHelp"
+seo_keywords = "Новости программы AlcoHelp"
 robot_index = "index"
 robot_follow = "follow"
 
-[post]
+[post newspost]
 slug = "{{ :slug }}"
 ==
+<?php
+function onEnd(){
+  $this->page->title = 'Новости';
+}
+?>
+==
 <div class="container">
-    {% component 'post' %}
+    {% component 'newspost' %}
+    {% component 'SeoBlogPost' data=post %}
 </div>
